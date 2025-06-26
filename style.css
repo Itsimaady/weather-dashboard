@@ -1,38 +1,80 @@
+
+ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e0f7fa;
+  background: linear-gradient(to bottom, #6dd5fa, #2980b9);
+  color: #fff;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  align-items: center;
+  padding: 20px;
 }
 
 .container {
-  background: white;
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-input {
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+input[type="text"] {
   padding: 10px;
-  width: 60%;
-  margin-right: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 button {
-  padding: 10px 15px;
-  background-color: #00bcd4;
-  color: white;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #2980b9;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
 }
 
-.card {
-  margin-top: 20px;
+button:hover {
+  background-color: #f1f1f1;
+}
+
+#weatherInfo {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#weatherInfo h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #fff;
+}
+
+#weatherInfo p {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #e0e0e0;
 }
 
 .hidden {
   display: none;
 }
+
